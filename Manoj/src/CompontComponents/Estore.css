@@ -1,0 +1,130 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f3f6; /* Flipkart-like background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Page Title */
+h1 {
+    color: #172337;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Product Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping when screen is small */
+    justify-content: center; /* Centers the products */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual Product Card */
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    width: 250px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.product-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 6px;
+    background: white;
+}
+
+/* Product Title */
+.product-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 8px;
+    min-height: 40px; 
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #388e3c;
+    margin-top: 5px;
+}
+
+/* Buy Now Button */
+.buy-button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #ff9f00; 
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease-in;
+    width: 100%;
+}
+
+.buy-button:hover {
+    background-color: #fb641b;
+}
+/* Pagination Container */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+/* Page Number Styling */
+.page-number {
+    font-size: 16px;
+    font-weight: bold;
+    color: #172337;
+    background: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Pagination Buttons */
+.pagination-btn {
+    background-color: #2874f0;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.pagination-btn:hover {
+    background-color: #0b5ed7;
+}
+
+.pagination-btn:disabled {
+    background-color: #b0bec5;
+    cursor: not-allowed;
+}
