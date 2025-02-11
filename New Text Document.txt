@@ -5,4 +5,14 @@ use Id
 Which is helps to create Random Id For The Elements
 
 
+React Design Patten
 Custom Hook
+Higher Order Componets 
+Compont composte Patten
+Render Prop
+  This are used for Design patten
+
+
+A Higher-Order Component (HOC) is a function that takes a component as an argument and returns a new component with additional functionality.
+It's a pattern for code reusability in React. Instead of duplicating logic across multiple components, we can wrap them in an HOC.
+
