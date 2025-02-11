@@ -1,0 +1,16 @@
+{
+    "emp":[
+        {
+            "name":"Manoj",
+            "age":24
+        },
+        {
+            "name":"Gayathri",
+            "age":23
+        },
+        {
+            "name":"Sharmitha",
+            "age":16
+        }
+    ]
+}
