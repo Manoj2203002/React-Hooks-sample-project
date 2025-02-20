@@ -1,0 +1,134 @@
+/* Home.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Dark text for contrast */
+  }
+  
+  .player-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9; /* Light background */
+    color: #333;
+  }
+  
+  .video-wrapper {
+    width: 80%;
+    max-width: 1080px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+  }
+  
+  button {
+    border: none;
+    color: #fff;
+    background-color: #ccc; /* Light gray background for buttons */
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #bbb; /* Slightly darker on hover */
+  }
+  
+  .play {
+    background-color: #4caf50; /* Green color for play */
+  }
+  
+  .mute {
+    background-color: #f44336; /* Red color for mute */
+  }
+  
+  .volume{
+    width: 10%;
+    margin: 10px 0;
+    background-color: #ddd; /* Lighter background for sliders */
+    border-radius: 5px;
+    height: 8px;
+  }
+  .progress {
+    width: 100%;
+    margin: 10px 0;
+    background-color: #ddd; /* Lighter background for sliders */
+    border-radius: 5px;
+    height: 8px;
+  }
+  
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #bbb;
+    height: 8px;
+    border-radius: 5px;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #333; /* Darker thumb for contrast */
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  input[type="range"]:focus {
+    background-color: #bbb;
+  }
+  
+  input[type="range"]:hover {
+    background-color: #ccc;
+  }
+  
+  .fullscreen {
+    background-color: #008CBA; /* Light blue for fullscreen button */
+    padding: 10px 20px;
+  }
+  
+  .fullscreen:hover {
+    background-color: #0077b3; /* Darker blue on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .video-wrapper {
+      width: 100%;
+      height: auto;
+    }
+  
+    .controls {
+      flex-direction: column;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  
+    input[type="range"] {
+      width: 80%;
+    }
+  }
+  

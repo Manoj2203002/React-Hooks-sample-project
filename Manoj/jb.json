@@ -1,16 +1,14 @@
 {
-    "emp":[
-        {
-            "name":"Manoj",
-            "age":24
-        },
-        {
-            "name":"Gayathri",
-            "age":23
-        },
-        {
-            "name":"Sharmitha",
-            "age":16
-        }
-    ]
+  "emp": [
+    {
+      "name": "manoj",
+      "age": "23",
+      "id": "82ad"
+    },
+    {
+      "id": "051e",
+      "name": "Gayathri",
+      "age": "22"
+    }
+  ]
 }

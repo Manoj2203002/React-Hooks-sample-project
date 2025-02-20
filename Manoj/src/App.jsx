@@ -1,8 +1,10 @@
 import React from 'react'
-import Axios from './axios/Axios'
+import LazyLoading from './Lazy Loading/LazyLoading'
 const App = () => {
   return (
-    <Axios/>
+    <div>
+     <LazyLoading/>
+    </div>
   )
 }
 
