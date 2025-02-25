@@ -1,15 +1,15 @@
-import React, { Suspense } from 'react'
-import Lazy from './Lazy'
+import React, { Suspense } from 'react';
+
+const Lazy = React.lazy(() => import('SuspenseComponent/lazy'));
+
 const LazyLoading = () => {
-    const Lazy=React.lazy(()=> import ('./SuspenseComponent/lazy'))
   return (
     <div>
-        <SuspenseComponent>
-        <Lazy/>
-        </SuspenseComponent>
-      
+      <Suspense fallback={<div>Loading...</div>}>
+        <Lazy />
+      </Suspense>
     </div>
-  )
-}
+  );
+};
 
-export default LazyLoading
+export default LazyLoading;
